@@ -13,4 +13,12 @@ jobs:
         with:
           # Fetches at least the immediate previous commit to access the previous policy version
           fetch-depth: 2
+
+      - name: Install setools
+        run: |
+          sudo apt-get update - y
+          sudo apt-get install -y setools
+
+      
+
         
