@@ -1,4 +1,4 @@
-name: binary-comparing-policies
+name: SELinux Policy Comparison
 
 on:
   push:
