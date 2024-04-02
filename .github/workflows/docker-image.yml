@@ -2,7 +2,7 @@ name: SELinux Policy Comparison
 
 on:
   push:
-    branches: [ "rawhide" ]
+    branches: 'policy/modules/**'
 
 jobs:
   compare-policies:
