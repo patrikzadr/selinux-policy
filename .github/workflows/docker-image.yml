@@ -5,5 +5,12 @@ on:
     branches: 'policy/modules/**'
 
 jobs:
-  compare-policies:
+  compare-selinux-policy:
     runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          # Fetches at least the immediate previous commit to access the previous policy version
+          fetch-depth: 2
+        
